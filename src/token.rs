@@ -82,7 +82,7 @@ impl std::fmt::Display for TokenType {
 }
 
 // ------------------------------- Token --------------------------------------------------
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct Token {
     pub(crate) typee: TokenType,
     pub(crate) literal: String,
