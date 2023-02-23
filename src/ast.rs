@@ -1,6 +1,5 @@
-use std::rc::Rc;
-
 use crate::token::Token;
+use std::rc::Rc;
 
 // trait sets
 pub trait Node {
@@ -33,7 +32,7 @@ impl Node for Program {
 pub struct LetStatement {
     pub token: Token,
     pub name: Rc<Identifier>,
-    pub value: Box<dyn Expression>,
+    pub value: Option<Box<dyn Expression>>,
 }
 
 impl Node for LetStatement {

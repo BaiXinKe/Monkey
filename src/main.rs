@@ -1,3 +1,5 @@
+#![feature(downcast_unchecked)]
+
 use std::{
     env,
     io::{stdin, stdout},
